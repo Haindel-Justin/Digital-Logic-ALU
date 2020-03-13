@@ -1,1 +1,47 @@
+FOR EACH PART, ADDRESS THE FOLLOWING 6 THINGS:
 
+i.	The name of the component (already listed)
+ii.	The inputs and their bit-size
+iii.	The outputs and their bit-size
+iv.	The interfaces and their bit-size
+v.	Any controls and their bit-size. (Such as Multiplexor Select)
+vi.	A one-sentence description if necessary. 
+
+
+Data being handled:
+Two 16-bit numbers will be able to be added, subtracted, multiplied, and divided resulting in a 32-bit result
+--------------------------------------------------------------------------------------------------------------------
+
+PARTS:
+
+AND
+
+COMPARATOR
+
+DIVIDER
+
+FULL ADDER
+
+SUBTRACTOR
+
+LEFT ARBITER
+
+RIGHT ARBITER
+
+MULTIPLEXOR
+
+MULTIPLIER
+
+NAND
+
+NOR
+
+OR
+
+XNOR
+
+XOR
+
+DECODER
+
+ENCODER
