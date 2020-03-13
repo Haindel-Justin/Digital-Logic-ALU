@@ -256,20 +256,24 @@ module testbench();
   i = 12;
   j = 24;
   #8;
-  $display("||A           ||B      ||Cin||A+B  ||Cout(a+b)||Overflow||A-B||Cout(a-b)");
-  $display("||%b||%b||%b||%b||%b||%b||%b||%b||%b",i,j,1'b0,f1,outwire,outwire4,f2,outwire2,outwire5);
+  $display("||A           ||B      ||Cin||A+B  ||Cout(a+b)||Overflow||Cin2|A-B||Cout(a-b)|overflow");
+  $display("||%b||%b||%b||%b||%b||%b|%b||%b||%b||%b",i,j,1'b0,f1,outwire,outwire4,f2,1'b1,outwire2,outwire5);
 
   i = 17557;
   j = 2652;
   #4;
-  $display("||A    ||B    ||Cin||A+B||Cout");
-  $display("||%b||%b||%b||%b||%b",i,j,1'b0,f1,outwire);
+    $display("||%b||%b||%b||%b||%b||%b|%b||%b||%b||%b",i,j,1'b0,f1,outwire,outwire4,f2,1'b1,outwire2,outwire5);
 
   i = 7866;
   j = 22;
   #4;
-  $display("||A    ||B    ||Cin||A+B||Cout");
-  $display("||%b||%b||%b||%b||%b",i,j,1'b0,f1,outwire);   	
+  $display("||%b||%b||%b||%b||%b||%b|%b||%b||%b||%b",i,j,1'b0,f1,outwire,outwire4,f2,1'b1,outwire2,outwire5);   	
+
+
+  i = 40;
+  j = 1000;
+  #4;
+  $display("||%b||%b||%b||%b||%b||%b|%b||%b||%b||%b",i,j,1'b0,f1,outwire,outwire4,f2,1'b1,outwire2,outwire5);   	
 
 /*	
   //$display acts like a classic C printf command.
