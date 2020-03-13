@@ -1,0 +1,10 @@
+// The output should be saved and turned in as a text file 
+// called <COHHORTNAME>.PART2.txt
+
+Decoder: 
+Dec Input:	0000
+Dec Output:	0000000000000001
+
+Encoder:
+Enc Input:	0000000001000000
+Enc Output:	0110
