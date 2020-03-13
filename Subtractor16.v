@@ -129,7 +129,7 @@ FullAdder1Bit fa3(a[15],b[15],car[5],car[6],sum[15]);
 //FullAdder4Bit f4a3(a[15:12],b[15:12],car[2],s[15:12],car[3]);
 
 
-assign out = car[6]^car[5];
+assign over = car[6]^car[5];
 assign cout=car[6];
 assign s[0]=sum[0];
 assign s[1]=sum[1];
@@ -253,9 +253,25 @@ module testbench();
   //Begin denotes the start of a block of code.	
  
   initial begin
-   	
+  i = 12;
+  j = 24;
+  #8;
+  $display("||A           ||B      ||Cin||A+B  ||Cout(a+b)||Overflow||A-B||Cout(a-b)");
+  $display("||%b||%b||%b||%b||%b||%b||%b||%b||%b",i,j,1'b0,f1,outwire,outwire4,f2,outwire2,outwire5);
 
-	
+  i = 17557;
+  j = 2652;
+  #4;
+  $display("||A    ||B    ||Cin||A+B||Cout");
+  $display("||%b||%b||%b||%b||%b",i,j,1'b0,f1,outwire);
+
+  i = 7866;
+  j = 22;
+  #4;
+  $display("||A    ||B    ||Cin||A+B||Cout");
+  $display("||%b||%b||%b||%b||%b",i,j,1'b0,f1,outwire);   	
+
+/*	
   //$display acts like a classic C printf command.
 
   $display ("|  |s|s|s|    |    |    |    |    |    |    |    ||    |LA  |E   |"); 
@@ -316,7 +332,7 @@ module testbench();
 		end
   
 	end//End of the for loop code block
- 
+ */
 	#10 //A time dealy of 10 time units. Hashtag Delay
 	$finish;//A command, not unlike System.exit(0) in Java.
   end  //End the code block of the main (initial)
