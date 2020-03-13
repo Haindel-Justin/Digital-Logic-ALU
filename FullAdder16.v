@@ -74,20 +74,6 @@ FullAdder4Bit f4a1(a[7:4],b[7:4],car[0],s[7:4],car[1]);
 FullAdder4Bit f4a2(a[11:8],b[11:8],car[1],s[11:8],car[2]);
 FullAdder4Bit f4a3(a[15:12],b[15:12],car[2],s[15:12],car[3]);
 
-/*FullAdder1Bit fa0(a[0],b[0],cin,car[0],sum[0]);
-FullAdder1Bit fa1(a[1],b[1],car[0],car[1],sum[1]);
-FullAdder1Bit fa2(a[2],b[2],car[1],car[2],sum[2]);
-FullAdder1Bit fa3(a[3],b[3],car[2],car[3],sum[3]);
-
-FullAdder1Bit fa3(a[3],b[3],car[2],car[3],sum[3]);
-FullAdder1Bit fa3(a[3],b[3],car[2],car[3],sum[3]);
-FullAdder1Bit fa3(a[3],b[3],car[2],car[3],sum[3]);
-FullAdder1Bit fa3(a[3],b[3],car[2],car[3],sum[3]);
-
-FullAdder1Bit fa3(a[3],b[3],car[2],car[3],sum[3]);
-FullAdder1Bit fa3(a[3],b[3],car[2],car[3],sum[3]);
-FullAdder1Bit fa3(a[3],b[3],car[2],car[3],sum[3]);
-FullAdder1Bit fa3(a[3],b[3],car[2],car[3],sum[3]);*/
 
 assign cout=car[3];
 assign s[0]=sum[0];
@@ -165,8 +151,25 @@ module testbench();
  
   initial begin
    	
+  i = 12;
+  j = 24;
+  #4;
+  $display("||A    ||B    ||Cin||A+B||Cout");
+  $display("||%b||%b||%b||%b||%b",i,j,1'b0,f1,outwire);
 
-	 
+  i = 17557;
+  j = 2652;
+  #4;
+  $display("||A    ||B    ||Cin||A+B||Cout");
+  $display("||%b||%b||%b||%b||%b",i,j,1'b0,f1,outwire);
+
+  i = 7866;
+  j = 22;
+  #4;
+  $display("||A    ||B    ||Cin||A+B||Cout");
+  $display("||%b||%b||%b||%b||%b",i,j,1'b0,f1,outwire);
+
+/*	 
 	
   //$display acts like a classic C printf command.
 
@@ -228,7 +231,7 @@ module testbench();
 		end
   
 	end//End of the for loop code block
- 
+ */
 	#10 //A time dealy of 10 time units. Hashtag Delay
 	$finish;//A command, not unlike System.exit(0) in Java.
   end  //End the code block of the main (initial)
