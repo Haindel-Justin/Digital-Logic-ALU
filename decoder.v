@@ -1,11 +1,10 @@
+// testbench
 module main;
-
     reg [3:0] a;
     decoder dec(a,b);
     
   initial 
     begin
-    
     assign a=4'b0000;
       $display("Dec Input:\t%4b\nDec Output:\t%16b", dec.a, dec.b);
       $finish ;
