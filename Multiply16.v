@@ -219,8 +219,12 @@ module testbench();
   //Begin denotes the start of a block of code.	
  
   initial begin
-   	
-
+ 	i = 152;
+	j = 2773;
+	#5;
+	$display("||       A               |||         B         ||| High bits out put  ||  low bits output  ||    HighLow Dec");
+	$display("||%b|||%b|||%b||%b||%d",i,j,f2,f1,aaa);  	
+ /*
 	
   //$display acts like a classic C printf command.
 
@@ -282,6 +286,7 @@ module testbench();
 		end
   
 	end//End of the for loop code block
+	*/
  
 	#10 //A time dealy of 10 time units. Hashtag Delay
 	$finish;//A command, not unlike System.exit(0) in Java.
