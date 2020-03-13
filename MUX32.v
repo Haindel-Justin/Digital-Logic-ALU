@@ -56,28 +56,28 @@ endmodule
 
 module connector();
 
-reg [15:0] c0;
-reg [15:0] c1;
-reg [15:0] c2;
-reg [15:0] c3;
-reg [15:0] c4;
-reg [15:0] c5;
-reg [15:0] c6;
-reg [15:0] c7;
-reg [15:0] c8;
-reg [15:0] c9;
-reg [15:0] c10;
-reg [15:0] c11;
-reg [15:0] c12;
-reg [15:0] c13;
-reg [15:0] c14;
-reg [15:0] c15;
+reg [31:0] c0;
+reg [31:0] c1;
+reg [31:0] c2;
+reg [31:0] c3;
+reg [31:0] c4;
+reg [31:0] c5;
+reg [31:0] c6;
+reg [31:0] c7;
+reg [31:0] c8;
+reg [31:0] c9;
+reg [31:0] c10;
+reg [31:0] c11;
+reg [31:0] c12;
+reg [31:0] c13;
+reg [31:0] c14;
+reg [31:0] c15;
 reg [15:0] sl;
 reg [7:0] s2;
 reg [4:0] s3;
-wire [15:0] ret;
-wire [15:0] ret2;
-wire [15:0] ret3;
+wire [31:0] ret;
+wire [31:0] ret2;
+wire [31:0] ret3;
 
  Multiplexer16to1 st1(c15,c14,c13,c12,c11,c10,c9,c8,c7,c6,c5,c4,c3,c2, c1, c0, sl, ret) ;
  Multiplexer8to1 st2(c7,c6,c5,c4,c3,c2, c1, c0, s2, ret2) ;
@@ -99,40 +99,41 @@ initial begin
 	c13={32'b10000100010000000100010000000000};
 	c14={32'b01100100000100000100010000000000};
 	c15={32'b11111111000000000100010000000000};
-
+	
+	$display("select1 ||| select2 ||| Select3  ||| mux1  ||||  mux 2 ||| mux3");
 	#10;
 	sl={16'b0000010000000000};
 	s2={16'b00000100};
 	s3={16'b0010};
 	#10
-	$display("|||%b||%b||||%b|",ret,ret2,ret3);
+	$display("|%b|%b|%b|||%b||%b||||%b|",sl,s2,s3,ret,ret2,ret3);
 	
 	sl={16'b0000000000000001};
 	s2={16'b00000001};
 	s3={16'b0001};
 	#10;
-	$display("|||%b||%b||||%b|",ret,ret2,ret3);
+	$display("|%b|%b|%b|||%b||%b||||%b|",sl,s2,s3,ret,ret2,ret3);
 
 	sl={16'b0000000000000010};
 	s2={16'b00000010};
 	s3={16'b0010};
 	#10;
-	$display ("|||%b||%b||||%b|",ret,ret2,ret3);
+	$display("|%b|%b|%b|||%b||%b||||%b|",sl,s2,s3,ret,ret2,ret3);
 	sl={16'b0000000000000100};
 	s2={16'b00000100};
 	s3={16'b0100};
 	#10;
-	$display("|||%b||%b||||%b|",ret,ret2,ret3);
+	$display("|%b|%b|%b|||%b||%b||||%b|",sl,s2,s3,ret,ret2,ret3);
 	sl={16'b1000000000000000};
 	s2={16'b10000000};
 	s3={16'b1000};
 	#10;
-	$display("|||%b||%b||||%b|",ret,ret2,ret3);
+	$display("|%b|%b|%b|||%b||%b||||%b|",sl,s2,s3,ret,ret2,ret3);
 	sl={16'b0010000000000000};
 	s2={16'b01000000};
 	s3={16'b1000};
 	#10;
-	$display("|||%b||%b||||%b|",ret,ret2,ret3);
+	$display("|%b|%b|%b|||%b||%b||||%b|",sl,s2,s3,ret,ret2,ret3);
 end
 
 
