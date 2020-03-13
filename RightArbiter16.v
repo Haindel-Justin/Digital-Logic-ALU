@@ -84,13 +84,17 @@ module testbench();
  
   initial begin
    	
+  i=14100;
+  #5;
+  $display("|| A      ||  Right Arbiter||");
+  $display("||%b||%b||",i,f1);
 
-	
-  //$display acts like a classic C printf command.
+  i=1;
+  #5;
+  $display("||%b||%b||",i,f1);
 
-  $display ("|  |s|s|s|    |    |    |    |    |    |    |    ||    |LA  |E   |"); 
-  $display ("| #|2|1|0|Ch 7|Ch 6|Ch 5|Ch 4|Ch 3|Ch 2|Ch 1|Ch 0||b   | out| out|");
-  $display ("|==+=+=+=+====+====+====+====+====+====+====+====++====+====+====+");
+/*
+  
   
     //A for loop, with register i being the loop control variable.
 	for (i = 4; i < 65535; i = i + 1) 
@@ -125,7 +129,7 @@ module testbench();
 		
   
 	end//End of the for loop code block
- 
+ */
 	#10 //A time dealy of 10 time units. Hashtag Delay
 	$finish;//A command, not unlike System.exit(0) in Java.
   end  //End the code block of the main (initial)
