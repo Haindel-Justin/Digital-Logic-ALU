@@ -8,10 +8,6 @@ v.	Any controls and their bit-size. (Such as Multiplexor Select)
 vi.	A one-sentence description if necessary. 
 
 
-                                                *********************************
-*********************************************** CONVERT TO PDF BEFORE TURNING IN**********************************************
-                                                *********************************
-
 Data being handled:
 Two 16-bit numbers will be able to be added, subtracted, multiplied, and divided resulting in a 32-bit result
 --------------------------------------------------------------------------------------------------------------------
@@ -59,7 +55,10 @@ vi.)
 i.) SUBTRACTOR
 ii.) inputs:  a - 16 bit
               b - 16 bit
-iii.)
+              cin - 1 bit
+iii.) outputs:  (A-B): f2 - 16 bit
+                (cout(a-b)): outwire2 - 1 bit
+                (overflow): outwire5 - 1 bit
 iv.)
 v.)
 vi.)
@@ -135,15 +134,15 @@ v.)
 vi.)
 
 i.) DECODER
-ii.)  inputs:  a- 4-bit binary
-iii.) output:  b- 16-bit one-hot
+ii.)
+iii.)
 iv.)
-v.)   n/a
-vi.)  converts a 4-bit binary number to a 16-bit one-hot
+v.)
+vi.)
 
 i.) ENCODER
-ii.)  inputs:   a- 16-bit one-hot
-iii.) output:   b- 4-bit binary
+ii.)
+iii.)
 iv.)
-v.)   n/a
-vi.)  converts a 16-bit one-hot to a 4-bit binary
+v.)
+vi.)
