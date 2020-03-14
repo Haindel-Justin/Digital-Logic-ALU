@@ -18,7 +18,7 @@ i.) AND
 ii.) inputs:  i - 16 bit
               j - 16 bit
 iii.) output:(AND): f1 - 16 bit
-iv.) 
+iv.) none
 v.) no controls
 vi.) standard 16 bit AND gate.
 
@@ -95,32 +95,37 @@ v.) no controls
 vi.) Multiplies a and b returns in the form of two 16 bit values corisponding to the highest 16 and lowes 16 bits
 
 i.) NAND
-ii.)
-iii.)
-iv.)
-v.)
-vi.)
+ii.) inputs:  i - 16 bit
+              j - 16 bit
+iii.) output:(NAND): f1 - 16 bit
+iv.) none
+v.) no controls
+vi.) standard 16 bit NAND gate.
+
 
 i.) NOR
-ii.)
-iii.)
-iv.)
-v.)
-vi.)
+ii.) inputs:  i - 16 bit
+              j - 16 bit
+iii.) output:(NOR): f1 - 16 bit
+iv.) none
+v.) no controls
+vi.) standard 16 bit NOR gate.
 
 i.) OR
-ii.)
-iii.)
-iv.)
-v.)
-vi.)
+ii.) inputs:  i - 16 bit
+              j - 16 bit
+iii.) output:(OR): f1 - 16 bit
+iv.) none
+v.) no controls
+vi.) standard 16 bit OR gate.
 
 i.) XNOR
-ii.)
-iii.)
-iv.)
-v.)
-vi.)
+ii.) inputs:  i - 16 bit
+              j - 16 bit
+iii.) output:(XNOR): f1 - 16 bit
+iv.) none
+v.) no controls
+vi.) standard 16 bit XNOR gate.
 
 i.) XOR
 ii.)inputs:  a - 16 bit
