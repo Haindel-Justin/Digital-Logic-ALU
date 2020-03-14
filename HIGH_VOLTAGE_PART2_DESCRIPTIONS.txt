@@ -98,7 +98,7 @@ vi.)
 i.) NOT
 ii.) inputs:  i - 16 bit
 iii.) output:(NOT): f1 - 16 bit
-iv.) 
+iv.) No Interfaces
 v.) no controls
 vi.) standard 16 bit NOT gate.
 
