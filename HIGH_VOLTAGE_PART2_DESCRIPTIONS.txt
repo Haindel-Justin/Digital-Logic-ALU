@@ -33,30 +33,106 @@ iv.)
 v.)
 vi.)
 
-DIVIDER
+i.) DIVIDER
+ii.) inputs:  a - 16 bit
+              b - 16 bit
+iii.) outputs:  (quotient): q - 16 bit
+                (remainder): r - 16 bit
+iv.)
+v.)
+vi.)
 
-FULL ADDER
+i.) FULL ADDER
+ii.) inputs:  a - 16 bit
+              b - 16 bit
+              Cin - 1 bit
+iii.) output: (A+B): s - 16 bit
+              cout - 1 bit
+iv.)
+v.)
+vi.)
 
-SUBTRACTOR
+i.) SUBTRACTOR
+ii.) inputs:  a - 16 bit
+              b - 16 bit
+iii.)
+iv.)
+v.)
+vi.)
 
-LEFT ARBITER
+i.) LEFT ARBITER
+ii.)
+iii.)
+iv.)
+v.)
+vi.)
 
-RIGHT ARBITER
+i.) RIGHT ARBITER
+ii.)
+iii.)
+iv.)
+v.)
+vi.)
 
-MULTIPLEXOR
+i.) MULTIPLEXOR
+ii.)
+iii.)
+iv.)
+v.)
+vi.)
 
-MULTIPLIER
+i.) MULTIPLIER
+ii.)
+iii.)
+iv.)
+v.)
+vi.)
 
-NAND
+i.) NAND
+ii.)
+iii.)
+iv.)
+v.)
+vi.)
 
-NOR
+i.) NOR
+ii.)
+iii.)
+iv.)
+v.)
+vi.)
 
-OR
+i.) OR
+ii.)
+iii.)
+iv.)
+v.)
+vi.)
 
-XNOR
+i.) XNOR
+ii.)
+iii.)
+iv.)
+v.)
+vi.)
 
-XOR
+i.) XOR
+ii.)
+iii.)
+iv.)
+v.)
+vi.)
 
-DECODER
+i.) DECODER
+ii.)
+iii.)
+iv.)
+v.)
+vi.)
 
-ENCODER
+i.) ENCODER
+ii.)
+iii.)
+iv.)
+v.)
+vi.)
