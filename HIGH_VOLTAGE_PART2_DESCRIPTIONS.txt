@@ -8,6 +8,10 @@ v.	Any controls and their bit-size. (Such as Multiplexor Select)
 vi.	A one-sentence description if necessary. 
 
 
+                                                *********************************
+*********************************************** CONVERT TO PDF BEFORE TURNING IN**********************************************
+                                                *********************************
+
 Data being handled:
 Two 16-bit numbers will be able to be added, subtracted, multiplied, and divided resulting in a 32-bit result
 --------------------------------------------------------------------------------------------------------------------
