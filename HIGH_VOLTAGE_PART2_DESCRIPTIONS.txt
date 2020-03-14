@@ -95,6 +95,13 @@ iv.)
 v.)
 vi.)
 
+i.) NOT
+ii.) inputs:  i - 16 bit
+iii.) output:(NOT): f1 - 16 bit
+iv.) 
+v.) no controls
+vi.) standard 16 bit NOT gate.
+
 i.) NOR
 ii.)
 iii.)
