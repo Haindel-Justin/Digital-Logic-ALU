@@ -131,15 +131,15 @@ v.)
 vi.)
 
 i.) DECODER
-ii.)
-iii.)
+ii.)  inputs:  a- 4-bit binary
+iii.) output:  b- 16-bit one-hot
 iv.)
-v.)
-vi.)
+v.)   n/a
+vi.)  converts a 4-bit binary number to a 16-bit one-hot
 
 i.) ENCODER
-ii.)
-iii.)
+ii.)  inputs:   a- 16-bit one-hot
+iii.) output:   b- 4-bit binary
 iv.)
-v.)
-vi.)
+v.)   n/a
+vi.)  converts a 16-bit one-hot to a 4-bit binary
