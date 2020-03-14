@@ -23,7 +23,15 @@ v.) no controls
 vi.) standard 16 bit AND gate.
 
 
-COMPARATOR
+i.) COMPARATOR
+ii.) inputs:  a - 16 bit
+              b - 16 bit
+iii.) output: (A<B): ls - 1 bit
+              (A>B): gt - 1 bit
+              (A=B): eq - 1 bit
+iv.)
+v.)
+vi.)
 
 DIVIDER
 
