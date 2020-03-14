@@ -29,7 +29,7 @@ ii.) inputs:  a - 16 bit
 iii.) output: (A<B): ls - 1 bit
               (A>B): gt - 1 bit
               (A=B): eq - 1 bit
-iv.)
+iv.) none
 v.) no controls
 vi.) !6 bit comparator returns in three bits if a is less than b, a is grater than b, or a equals b
 
@@ -38,7 +38,7 @@ ii.) inputs:  a - 16 bit
               b - 16 bit
 iii.) outputs:  (quotient): q - 16 bit
                 (remainder): r - 16 bit
-iv.)
+iv.) none
 v.) no controls
 vi.) Divides a by b and gives remainder
 
@@ -48,43 +48,49 @@ ii.) inputs:  a - 16 bit
               Cin - 1 bit
 iii.) output: (A+B): s - 16 bit
               cout - 1 bit
-iv.)
+iv.) none
 v.) no controls
-vi.)
+vi.) Standard 16 bit full adder.
 
 i.) SUBTRACTOR
 ii.) inputs:  a - 16 bit
               b - 16 bit
-iii.)
-iv.)
+iii.) output: s - 16 bit
+                  cout - 1 bit
+iv.) none
 v.) Controls: Cin - 1 bit 
 vi.) Standared 16 bit adder subtractor that is controlled by a Cin value and returns in 2s complement form during subtraction.
 
 i.) LEFT ARBITER
-ii.)
-iii.)
-iv.)
+ii.) inputs: r - 16 bits
+iii.) output: g - 16 bits
+iv.) none
 v.) no controls 
 vi.) Standared 16 bit left arbiter
 
 i.) RIGHT ARBITER
-ii.)
-iii.)
-iv.)
+ii.) inputs: r - 16 bits
+iii.) output: g - 16 bits
+iv.) none
 v.) no controls
 vi.) Standared 16 bit right arbiter
 
 i.) MULTIPLEXOR
-ii.)
-iii.)
-iv.)
-v.) S 4 bit
+ii.) input: Ch3 - 32 bits
+            Ch2 - 32 bits
+            Ch1 - 32 bits
+            Ch0 - 32 bits
+iii.) output b - 32 bits
+iv.) none
+v.) s - 4 bit
 vi.) Standared 4 to 1 multiplexor with with a 32 bit line selected.
 
 i.) MULTIPLIER
-ii.)
-iii.)
-iv.)
+ii.) input: a - 16 bits
+            b - 16 bits
+iii.) output plow -16 bits
+             phigh -16 bits
+iv.) none
 v.) no controls
 vi.) Multiplies a and b returns in the form of two 16 bit values corisponding to the highest 16 and lowes 16 bits
 
@@ -117,9 +123,10 @@ v.)
 vi.)
 
 i.) XOR
-ii.)
-iii.)
-iv.)
+ii.)inputs:  a - 16 bit
+             b - 16 bit
+iii.)output:(XOR) r - 16 bits
+iv.) none
 v.) no controls
 vi.) standard 16 bit XOR gate
 
