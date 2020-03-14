@@ -14,7 +14,14 @@ Two 16-bit numbers will be able to be added, subtracted, multiplied, and divided
 
 PARTS:
 
-AND
+i.) AND
+ii.) inputs:  i - 16 bit
+              j - 16 bit
+iii.) output:(AND): f1 - 16 bit
+iv.) 
+v.) no controls
+vi.) standard 16 bit AND gate.
+
 
 COMPARATOR
 
