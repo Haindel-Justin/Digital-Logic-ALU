@@ -30,8 +30,8 @@ iii.) output: (A<B): ls - 1 bit
               (A>B): gt - 1 bit
               (A=B): eq - 1 bit
 iv.)
-v.)
-vi.)
+v.) no controls
+vi.) !6 bit comparator returns in three bits if a is less than b, a is grater than b, or a equals b
 
 i.) DIVIDER
 ii.) inputs:  a - 16 bit
@@ -39,8 +39,8 @@ ii.) inputs:  a - 16 bit
 iii.) outputs:  (quotient): q - 16 bit
                 (remainder): r - 16 bit
 iv.)
-v.)
-vi.)
+v.) no controls
+vi.) Divides a by b and gives remainder
 
 i.) FULL ADDER
 ii.) inputs:  a - 16 bit
@@ -49,47 +49,44 @@ ii.) inputs:  a - 16 bit
 iii.) output: (A+B): s - 16 bit
               cout - 1 bit
 iv.)
-v.)
+v.) no controls
 vi.)
 
 i.) SUBTRACTOR
 ii.) inputs:  a - 16 bit
               b - 16 bit
-              cin - 1 bit
-iii.) outputs:  (A-B): f2 - 16 bit
-                (cout(a-b)): outwire2 - 1 bit
-                (overflow): outwire5 - 1 bit
+iii.)
 iv.)
-v.)
-vi.)
+v.) Controls: Cin - 1 bit 
+vi.) Standared 16 bit adder subtractor that is controlled by a Cin value and returns in 2s complement form during subtraction.
 
 i.) LEFT ARBITER
 ii.)
 iii.)
 iv.)
-v.)
-vi.)
+v.) no controls 
+vi.) Standared 16 bit left arbiter
 
 i.) RIGHT ARBITER
 ii.)
 iii.)
 iv.)
-v.)
-vi.)
+v.) no controls
+vi.) Standared 16 bit right arbiter
 
 i.) MULTIPLEXOR
 ii.)
 iii.)
 iv.)
-v.)
-vi.)
+v.) S 4 bit
+vi.) Standared 4 to 1 multiplexor with with a 32 bit line selected.
 
 i.) MULTIPLIER
 ii.)
 iii.)
 iv.)
-v.)
-vi.)
+v.) no controls
+vi.) Multiplies a and b returns in the form of two 16 bit values corisponding to the highest 16 and lowes 16 bits
 
 i.) NAND
 ii.)
@@ -97,13 +94,6 @@ iii.)
 iv.)
 v.)
 vi.)
-
-i.) NOT
-ii.) inputs:  i - 16 bit
-iii.) output:(NOT): f1 - 16 bit
-iv.) No Interfaces
-v.) no controls
-vi.) standard 16 bit NOT gate.
 
 i.) NOR
 ii.)
@@ -130,8 +120,8 @@ i.) XOR
 ii.)
 iii.)
 iv.)
-v.)
-vi.)
+v.) no controls
+vi.) standard 16 bit XOR gate
 
 i.) DECODER
 ii.)
