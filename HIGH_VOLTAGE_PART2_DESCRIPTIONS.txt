@@ -130,16 +130,18 @@ iv.) none
 v.) no controls
 vi.) standard 16 bit XOR gate
 
+
 i.) DECODER
-ii.)
-iii.)
-iv.)
-v.)
-vi.)
+ii.)  inputs:  a- 4-bit binary
+iii.) output:  b- 16-bit one-hot
+iv.)  n/a
+v.)   n/a
+vi.)  converts a 4-bit binary number to a 16-bit one-hot
+
 
 i.) ENCODER
-ii.)
-iii.)
-iv.)
-v.)
-vi.)
+ii.)  inputs:   a- 16-bit one-hot
+iii.) output:   b- 4-bit binary
+iv.)  n/a
+v.)   n/a
+vi.)  converts a 16-bit one-hot to a 4-bit binary
